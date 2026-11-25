@@ -1,0 +1,111 @@
+.card {
+    background-color: var(--color-bg-card);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-item);
+    padding: var(--padding-card);
+    cursor: pointer;
+}
+.question {
+    font-size: 1.3rem;
+    text-align: left;
+    position: relative;
+    padding-left: 24px;
+}
+.question::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: -5px;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.questionBtn {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.questionBody {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.badgesBtn_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.badges {
+    display: flex;
+    align-items: center;
+    gap: 10px 20px;
+    flex-wrap: wrap;
+}
+.moreBtn_container {
+    position: relative;
+}
+.moreBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border-radius: 7px;
+}
+.moreBtn:hover {
+    background: var(--color-bg-badge);
+}
+.popover {
+    background: var(--color-bg-card);
+    box-shadow: var(--shadow-item);
+    border-radius: 10px;
+    padding: 15px 10px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+.popover_moreBtn {
+    padding: 7px 15px;
+    border-radius: 10px;
+}
+.popover_moreBtn:hover {
+    background: var(--color-bg-badge);
+    color: var(--color-primary);
+}
+.answer {
+    overflow-wrap: break-word;
+    white-space: normal;
+    color: var(--color-text-secondary);
+    overflow-x: auto;
+}
+.moreBtn_mobile {
+    display: none;
+}
+
+@media (max-width: 575px) {
+    .moreBtn_container {
+        display: none;
+    }
+    .moreBtn_mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        width: 150px;
+        align-self: flex-end;
+        color: var(--color-primary);
+        border-radius: var(--btn-radius);
+        padding: 7px;
+    }
+    .moreBtn_mobile:hover {
+        background: var(--color-bg-badge);
+    }
+}

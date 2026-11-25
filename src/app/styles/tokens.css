@@ -1,0 +1,64 @@
+:root {
+    --font-family-base: 'Inter', sans-serif;
+
+    --color-primary: #6A0BFF;
+    --color-primary-hover: #5500E6;
+    --color-primary-hover-light: rgba(106, 11, 255, 0.5);
+
+    --color-primary-light: #E1CEFF;
+
+    --color-bg-page: #F5F5F7;
+    --color-bg-card: #FFFFFF;
+
+    --color-bg-footer: #18003E;
+    --color-bg-badge: #F8F8F8;
+
+    --color-skeleton-dark: #E0E0E0;
+
+    --color-text-main: #191919;
+    --color-text-secondary: #474747;
+    --color-text-tertiary: #8C8C8C;
+
+    --color-border: #E8E8E8;
+    --color-border-strong: #BABABA;
+
+    --color-error: #FF3B30;
+    --color-error-light: #FDD8E1;
+    --color-error-light-hover: #FBAEC1;
+    --color-success: #008616;
+    --color-success-light: #EDF7EF;
+
+    --radius-card: 25px;
+
+    --padding-card: 25px;
+
+    --gap-card: 25px;
+
+    --shadow-card: 0 1px 10px -2.5px rgba(0, 0, 0, 0.15);
+    --shadow-item: 0 2px 10px -5px rgba(0, 0, 0, 0.2);
+    --shadow-sidebar: -2px 2px 15px rgba(0, 0, 0, 0.1);
+    --shadow-header: 0 1px 5px -5px rgba(0, 0, 0, 0.3);
+
+    --btn-height-sm: 32px;
+    --btn-padding-sm: 6px 12px;
+    --btn-font-sm: 0.9rem;
+    --btn-gap-sm: 4px;
+
+    --btn-height-md: 40px;
+    --btn-padding-md: 10px 20px;
+    --btn-font-md: 1rem;
+
+    --btn-height-lg: 48px;
+    --btn-padding-lg: 14px 24px;
+    --btn-font-lg: 1.1rem;
+
+    --btn-radius: 10px;
+    --btn-gap: 8px;
+}
+
+@media (max-width: 575px) {
+    :root {
+        --padding-card: 15px;
+        --gap-card: 15px;
+    }
+}

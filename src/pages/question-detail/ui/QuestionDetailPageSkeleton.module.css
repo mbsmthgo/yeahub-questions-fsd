@@ -1,0 +1,194 @@
+.skeletonPage {
+    padding: 40px 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--gap-card);
+    flex: 1 0 auto;
+}
+
+.skeletonDark, .skeletonLight {
+    border-radius: 15px;
+}
+.skeletonDark {
+    background-color: var(--color-skeleton-dark);
+}
+.skeletonLight {
+    background-color: var(--color-bg-badge);
+}
+
+.leftCol,
+.rightCol,
+.headerInfo,
+.shortAnswer,
+.longAnswer,
+.metaSidebar,
+.metaBlock,
+.guruCard,
+.guruInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap-card);
+}
+
+.leftCol {
+    min-width: 0;
+    flex: 0 0 70%;
+    gap: var(--gap-card);
+}
+.rightCol {
+    flex: 1;
+    gap: var(--gap-card);
+}
+
+.header, .shortAnswer, .longAnswer, .metaSidebar, .guruCard {
+    background-color: var(--color-bg-card);
+    width: 100%;
+    border-radius: var(--radius-card);
+    padding: var(--padding-card);
+}
+
+.header, .guruCard {
+    min-height: 200px;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.shortAnswer, .longAnswer, .guruCard {
+    gap: 15px;
+}
+
+.shortAnswer {
+    height: 300px;
+}
+.longAnswer {
+    height: 400px;
+}
+
+.navBtn {
+    margin-left: 15px;
+    margin-top: 7px;
+    width: 100px;
+    height: 30px;
+}
+
+.headerImage {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+.headerInfo {
+    flex: 1;
+    min-width: 0;
+    gap: 15px;
+}
+
+.headerTitle {
+    width: 75%;
+    max-width: 450px;
+    height: 40px;
+}
+
+.headerDescription {
+    width: 90%;
+    max-width: 500px;
+    height: 30px;
+}
+
+.answerTitle {
+    width: 200px;
+    height: 40px;
+}
+
+.answerBody {
+    width: 100%;
+    height: 200px;
+}
+
+.metaSidebar {
+    height: 350px;
+    gap: var(--gap-card);
+}
+
+.metaBlock {
+    gap: 10px;
+}
+
+.metaTitle {
+    width: 100px;
+    height: 25px;
+}
+
+.metaValue {
+    width: 150px;
+    height: 30px;
+}
+
+.guruContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.guruPhoto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.guruInfo {
+    flex: 1;
+    gap: 10px;
+}
+
+.guruValue {
+    width: 100px;
+    height: 25px;
+}
+
+.guruDescription {
+    width: 100%;
+    height: 50px;
+}
+
+@media (max-width: 1024px) {
+    .skeletonPage {
+        padding: 20px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .leftCol {
+        flex: none;
+        width: 100%;
+    }
+    .metaSidebar {
+        display: none;
+    }
+}
+@media (max-width: 575px) {
+    .skeletonPage {
+        padding: 15px;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .headerImage {
+        width: 100%;
+    }
+    .headerInfo {
+        width: 100%;
+    }
+}

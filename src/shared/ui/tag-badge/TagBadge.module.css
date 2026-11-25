@@ -1,0 +1,16 @@
+.badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--color-bg-badge);
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    max-width: 135px;
+}
+.badgeIcon {
+    background: var(--color-primary);
+    padding: 2px 5px;
+    color: var(--color-bg-card);
+    border-radius: 5px;
+}

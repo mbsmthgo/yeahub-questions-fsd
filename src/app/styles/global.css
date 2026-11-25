@@ -1,0 +1,19 @@
+@import '@/app/styles/reset.css';
+@import '@/app/styles/tokens.css';
+
+body {
+    font-family: var(--font-family-base), sans-serif;
+    font-size: 16px;
+    background-color: var(--color-bg-page);
+    color: var(--color-text-main);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+*:focus-visible {
+    outline: 1px solid var(--color-primary);
+}

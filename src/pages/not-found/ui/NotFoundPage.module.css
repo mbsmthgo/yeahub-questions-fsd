@@ -1,0 +1,23 @@
+.page {
+    padding: 40px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-card);
+    flex: 1 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .page {
+        padding: 20px;
+    }
+}
+@media (max-width: 575px) {
+    .page {
+        padding: 15px;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+}

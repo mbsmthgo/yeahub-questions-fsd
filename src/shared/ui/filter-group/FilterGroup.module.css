@@ -1,0 +1,17 @@
+.title {
+    color: var(--color-text-secondary);
+    margin-bottom: 10px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skeleton {
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    background-color: var(--color-bg-badge);
+    border-radius: 15px;
+}
