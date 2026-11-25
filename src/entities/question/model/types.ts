@@ -30,8 +30,6 @@ interface QuestionTopic {
     updatedAt: string;
 }
 
-type NestedSkill = Omit<SkillListItem, "createdBy">
-
 export interface QuestionFull extends QuestionListItem {
     slug: string;
     description: string;
@@ -47,6 +45,6 @@ export interface QuestionFull extends QuestionListItem {
     createdBy: User | null;
     updatedBy: User | null;
     questionSpecializations: SpecializationListItem[];
-    questionSkills: NestedSkill[];
+    questionSkills: SkillListItem[];
     questionTopics: QuestionTopic[];
 }
